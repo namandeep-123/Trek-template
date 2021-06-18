@@ -203,6 +203,7 @@ nav ul {
 }
 
 .cards {
+  color: white;
   width: 90%;
   margin: auto;
   display: flex;
