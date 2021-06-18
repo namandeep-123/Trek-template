@@ -1,0 +1,330 @@
+/* Global Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#logo {
+  font-family: "Pattaya", sans-serif;
+  cursor: pointer;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  border: 2px solid #23d997;
+  padding: 1.5rem 6rem;
+  background: transparent;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+button:hover {
+  color: black;
+  background: #23d997;
+}
+input {
+  color: black;
+  border-radius: 3px;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 4.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+h5 {
+  font-size: 2rem;
+}
+.line {
+  width: 30%;
+  height: 0.5rem;
+  border-radius: 3px;
+  background: #23d997;
+}
+/* Nav Bar Styling */
+.main-head {
+  background: #131c27;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav {
+  color: white;
+  padding: 2rem;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  color: white;
+  flex-wrap: wrap;
+}
+#logo {
+  flex: 1 1 20rem;
+}
+/* Hero Styling */
+.hero {
+  color: white;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/front-image.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h2 {
+  padding: 5rem;
+}
+.hero input {
+  font-size: 3.2rem;
+  font-weight: lighter;
+}
+.hero button {
+  margin-top: 2rem;
+  transition: all 0.5s ease;
+  border-radius: 0;
+  outline: 2px solid #23d997;
+}
+.hero button:hover,
+.hero button:focus {
+  border-radius: 5px;
+  outline-offset: 4px;
+}
+/* keyframes for cloud animation */
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* mountains */
+#mountains {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/mountains.jpg);
+  z-index: 0;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mountain-header {
+  width: 90%;
+  margin: auto;
+}
+.mountain-header h1 {
+  padding: 2rem 0rem;
+}
+.mountain-header h5 {
+  padding: 4rem 0rem;
+  /* background: linear-gradient(#131c27, #241816);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+
+  pointer-events: none;
+}
+.cloud-mountain-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.cloud-mountain-2 {
+  top: 20%;
+  z-index: -10;
+  opacity: 0.5;
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+/* Benifits Of Treking */
+.benifit-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/trek-man.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.benifits-head {
+  background: #343c44;
+  padding: 2rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  min-height: 50vh;
+  flex: 1 1 25rem;
+  margin: 2rem 0rem 2rem 5rem;
+  /* padding: 2rem; */
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5), 0px 30px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.card h,
+.card p {
+  padding: 1rem;
+}
+.card-icon {
+  background: #23d997;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.cards img {
+  height: 80px;
+}
+/* Contact Us css */
+#contact {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/last-image.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form-wrapper {
+  border-radius: 30px;
+  width: 60%;
+  background: rgba(19, 28, 39, 0.8);
+}
+.form-head {
+  padding: 4rem;
+}
+.form-wrapper input {
+  padding: 1rem 1rem 1rem 0rem;
+}
+.name-form,
+.email-form {
+  padding: 2rem;
+}
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+.form-wrapper button {
+  width: 100%;
+  font-size: 2rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: 6rem;
+  background: #1d324d;
+  border: solid 2px #1d324d;
+}
+.form-wrapper button:hover,
+.form-wrapper button:focus {
+  color: white;
+  opacity: 0.8;
+}
+/* Footer */
+footer {
+  color: white;
+  background: #131c27;
+  /* min-height: 10vh; */
+}
+.footer-wrap {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h4 {
+  flex: 1 1 40rem;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Media Queries */
+@media (max-width: 860px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    display: block;
+    text-align: center;
+  }
+  #logo {
+    margin-right: 5rem;
+    padding: 1rem;
+  }
+  .cloud {
+    height: 60rem;
+  }
+  .cloud-mountain-1 {
+    z-index: -1;
+  }
+  .cloud-mountain-2 {
+    z-index: -2;
+  }
+  footer h4 {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
