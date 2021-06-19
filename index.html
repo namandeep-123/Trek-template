@@ -28,100 +28,109 @@
         </ul>
       </nav>
     </header>
-    <section class="hero">
-      <h2>
-        Just the right amount <br />
-        of everything
-      </h2>
-      <input type="email" />
-      <button>Submit</button>
-    </section>
-    <section id="mountains">
-      <header class="mountain-header">
-        <h1>The Perfect Travelling Experience with us</h1>
-        <div class="line"></div>
-        <h5>
-          We cover every Trek . Our well experienced team of local guides will
-          get you to know <br />
-          the real adventure of any Himalayan trips of India better than anyone
-          else.
-        </h5>
-        <img src="./img/cloud.png" class="cloud-mountain-1 cloud" alt="" />
-        <img src="./img/cloud.png" class="cloud-mountain-2 cloud" alt="" />
-      </header>
-    </section>
-    <section id="benifits">
-      <header class="benifits-head">
-        <h2>We organize adventurous trekking in Himalayas</h2>
-        <h3>
-          Being trekkers ourselves, We don't like to spend too much on Gear.
-        </h3>
-      </header>
-      <header class="benifit-background">
-        <div class="cards">
-          <div class="card">
-            <div class="card-icon">
-              <img src="./icons/hiking.svg" alt="hiking" />
-            </div>
-            <h4>Trekking</h4>
-            <p>
-              Trekking is a form of walking, undertaken with the specific
-              purpose of exploring and enjoying the scenery.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-icon">
-              <img src="./icons/distance.svg" alt="hiking" />
-            </div>
-            <h4>Distance</h4>
-            <p>
-              When everything feels like an uphill struggle, think about the
-              view from the top.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card-icon">
-              <img src="./icons/camping-tent.svg" alt="hiking" />
-            </div>
-            <h4>Tent</h4>
-            <p>
-              Enjoy additional comfort with our Fresh&Black concept for a good
-              night's sleep in the cool and dark.
-            </p>
-          </div>
-        </div>
-      </header>
-    </section>
-    <section id="contact">
-      <div class="form-wrapper">
-        <header class="form-head">
-          <h2>Contact Us</h2>
+    <main>
+      <section class="hero">
+        <h2>
+          Just the right amount <br />
+          of everything
+        </h2>
+        <label for="newsletter"></label>
+        <input id="newsletter" type="email" name="_replyto" />
+        <button>Submit</button>
+      </section>
+      <section id="mountains">
+        <header class="mountain-header">
+          <h1>The Perfect Travelling Experience with us</h1>
+          <div class="line"></div>
+          <h5>
+            We cover every Trek . Our well experienced team of local guides will
+            get you to know <br />
+            the real adventure of any Himalayan trips of India better than
+            anyone else.
+          </h5>
+          <img src="./img/cloud.png" class="cloud-mountain-1 cloud" alt="" />
+          <img src="./img/cloud.png" class="cloud-mountain-2 cloud" alt="" />
         </header>
-        <form action="https://formspree.io/f/xnqlvlno" method="POST">
-          <div class="name-form">
-            <label for="name">Name</label>
-            <input type="text" name="message" required />
+      </section>
+      <section id="benifits">
+        <header class="benifits-head">
+          <h2>We organize adventurous trekking in Himalayas</h2>
+          <h3>
+            Being trekkers ourselves, We don't like to spend too much on Gear.
+          </h3>
+        </header>
+        <header class="benifit-background">
+          <div class="cards">
+            <div class="card">
+              <div class="card-icon">
+                <img src="./icons/hiking.svg" alt="hiking" />
+              </div>
+              <h4>Trekking</h4>
+              <p>
+                Trekking is a form of walking, undertaken with the specific
+                purpose of exploring and enjoying the scenery.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="./icons/distance.svg" alt="hiking" />
+              </div>
+              <h4>Distance</h4>
+              <p>
+                When everything feels like an uphill struggle, think about the
+                view from the top.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="./icons/camping-tent.svg" alt="hiking" />
+              </div>
+              <h4>Tent</h4>
+              <p>
+                Enjoy additional comfort with our Fresh&Black concept for a good
+                night's sleep in the cool and dark.
+              </p>
+            </div>
           </div>
-          <div class="email-form">
-            <label for="email">email</label>
-            <input type="email" name="_replyto" required />
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
+        </header>
+      </section>
+      <section id="contact">
+        <div class="form-wrapper">
+          <header class="form-head">
+            <h2>Contact Us</h2>
+          </header>
+          <form action="https://formspree.io/f/xnqlvlno" method="POST">
+            <div class="name-form">
+              <label for="name">Name</label>
+              <input id="name" type="text" name="message" required />
+            </div>
+            <div class="email-form">
+              <label for="email">email</label>
+              <input id="email" type="email" name="_replyto" required />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer-wrap">
         <h4>Trek &copy;</h4>
         <ul>
           <li>
-            <a href="#"><img src="./icons/instagram.svg" alt="" /></a>
+            <a href="#"
+              ><img src="./icons/instagram.svg" alt="instagram-social-media"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/twitter.svg" alt="" /></a>
+            <a href="#"
+              ><img src="./icons/twitter.svg" alt="twitter-social-media"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="./icons/youtube.svg" alt="" /></a>
+            <a href="#"
+              ><img src="./icons/youtube.svg" alt="youtube-social-media"
+            /></a>
           </li>
         </ul>
       </div>
